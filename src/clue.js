@@ -109,7 +109,7 @@ function pickMystery() {
     suspect: selectRandom(suspectsArray),
     weapon: selectRandom(weaponsArray),
     room: selectRandom(roomsArray)
-  };
+  }
   return mystery;
 }
 
@@ -117,7 +117,7 @@ function pickMystery() {
 // ITERATION 3
 
 function revealMystery(obj) {
-  console.log(`${obj.suspect.firstName} ${obj.suspect.lastName} killed Mr. Boddy using the ${obj.weapon.name} in the ${obj.room.name}!`);
+  return `${obj.suspect.firstName} ${obj.suspect.lastName} killed Mr. Boddy using the ${obj.weapon.name} in the ${obj.room.name}!`;
 };
 
 // The following is required to make unit tests work.
